@@ -3,11 +3,15 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "server": "nodemon index.js",
     "test": "cross-env NODE_ENV=testing jest --verbose --runInBand --silent",
     "resetdb": "knex migrate:rollback && knex migrate:latest && knex seed:run"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "corss": "^2.8.5",
+    "express": "^5.1.0",
     "knex": "^2.0.0",
     "sqlite3": "^5.0.8"
   },
